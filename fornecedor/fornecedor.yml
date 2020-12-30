@@ -15,8 +15,8 @@ spring:
       max-lifetime: 25200000
   jpa:
     hibernate:
-      ddl-auto: none
+      ddl-auto: update
       naming.implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl
-    generate-ddl: false
+    generate-ddl: true
     show-sql: true
     database: postgresql
