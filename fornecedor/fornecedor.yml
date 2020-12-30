@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/fornecedor
+    username: postgres
+    password: 123456
+    hikari:
+      pool-name: fornecedorHikari
+      connection-timeout: 2000
+      validation-timeout: 2000
+      idle-timeout: 0
+      auto-commit: false
+      minimum-idle: 10
+      maximum-pool-size: 50
+      max-lifetime: 25200000
+  jpa:
+    hibernate:
+      ddl-auto: none
+      naming.implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl
+    generate-ddl: false
+    show-sql: true
+    database: postgresql
